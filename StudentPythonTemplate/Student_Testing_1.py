@@ -29,7 +29,6 @@ original_testing_data = Helper.readCSVFile("../testing_data.csv")
 training_data = fix_paths_in_csv(original_training_data)
 testing_data = fix_paths_in_csv(original_testing_data)
 
-
 class Task_1_Testing(unittest.TestCase):
     #
     # This function contains one unit test for getClassesOfKNearestNeighbours.
@@ -94,7 +93,6 @@ class Task_1_Testing(unittest.TestCase):
             # Skip test if not enough valid data
             self.skipTest("Not enough valid image files found to run this test")
 
-
 # This function checks if the classified data from kNN has the right format (not content, just format!)
 # It checks if the required columns are present, and if entries are paths and classes
 def validateDataFormat(data_to_validate):
@@ -108,7 +106,6 @@ def validateDataFormat(data_to_validate):
         if not isFile or not isClass:
             return False
     return formatCorrect
-
 
 if __name__ == "__main__":
     test_classes_to_run = [Task_1_Testing]
