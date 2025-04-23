@@ -18,7 +18,7 @@ def fix_paths_in_csv(csv_data):
     for i in range(1, len(fixed_data)):  # Skip header
         if isinstance(fixed_data[i][0], str) and "../Images" in fixed_data[i][0]:
             # Replace "../Images" with "./Images" in the path
-            fixed_data[i][0] = fixed_data[i][0].replace("../Images", "./Images")
+            fixed_data[i][0] = fixed_data[i][0].replace("../Images", "../Images")
     return fixed_data
 
 # Read the CSV files with original paths
