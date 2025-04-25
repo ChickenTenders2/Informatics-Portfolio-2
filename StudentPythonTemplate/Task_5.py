@@ -24,19 +24,14 @@ Prediction of Best Image Classifier. In V. S. Reddy, V. K. Prasad, J. Wang, & N.
 (Eds.), Intelligent Systems and Sustainable Computing: Proceedings of ICISSC 2022 
 (pp. 147-159). Springer Nature Singapore.
 
-Through my research in Cardiff University's library, I discovered that support vector machines (SVMs) have a significant advancement
-over the k-Nearest Neighbors (kNN) approach I implemented in earlier tasks. SVMs implement optimal hyperplane separation with maximum
-margins, significantly enhancing its ability to handle the high-dimensional feature spaces encountered in real-world image classification
-problems. The libary resource I chose provides evidence for why more advanced techniques exists and are needed beyond kNN implementations.
+Through my research in Cardiff University's library, I discovered that support vector machines (SVMs) significantly outperform the
+k-Nearest Neighbors (kNN) approach I implemented earlier. SVMs use optimal hyperplane seperation with maximum margins, enhancing performance
+in high-dimensional image classification problems.
 
-While kNN relies on proximity-based classification and struggles with computational efficiency while dealing with large datasets such as
-the ones used for previous tasks, SVMs transform nonlinear data through specialized kernel functions (e.g. poly, RBF) to create separable
-representations. This difference allows SVMs to achieve 86% accuracy on human/animal classification compared to kNN's 69%, proving SVM's
-generalization capabilities and consistent robust results across a large and diverse image dataset. However, there are occasions where 
-kNN outperforms the SVMs, in specific contexts such as breast cancer detection with 98% accuracy. 
+While kNN relies on proximity-based classification and struggles with large datasets, SVMs transform nonlinear data through specialized
+kernel functions, achieving 86% accurancy on human/animal classification versus kNN's 69%.
 
-SVM's advantages extend beyond accuracy to include better classification margins and reduced resistance to memorizing training data. 
-These qualities make SVMs valuable for complex image classication tasks where feature relationships extend beyond basic distance measures,
-which is a key limitation of kNN's distance-based approach. 
+SVM's advantages include better classification margins and reduced tendency to memorize training data, making them valuable for complex
+images where feature relationships extend beyond basic distance measures. 
 
 """
