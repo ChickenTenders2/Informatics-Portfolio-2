@@ -174,7 +174,6 @@ def kNN(training_data: numpy.typing.NDArray, data_to_classify: numpy.typing.NDAr
 # Be aware that error handling below is...limited.                                       #
 ##########################################################################################
 
-
 # This function reads the necessary arguments from input (see parse_arguments function in Helper file),
 # and based on them executes
 # the kNN classifier. If the "unseen" mode is on, the results are written to a file.
@@ -216,7 +215,6 @@ def main():
         out = f'{path}/{student_id}_classified_data.csv'
         print(f'Writing data to {out}')
         Helper.writeCSVFile(out, result)
-
 
 if __name__ == '__main__':
     main()

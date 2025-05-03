@@ -175,7 +175,6 @@ def computeAccuracy(tps: list[int], fps: list[int], fns: list[int], data_size: i
         accuracy = sum(tps) / data_size
     return accuracy
 
-
 # In this function you are expected to compute precision, recall, f-measure and accuracy of your classifier using
 # the macro average approach.
 

@@ -8,7 +8,6 @@ import numpy
 import csv
 import argparse
 
-
 # This function does reading and resizing of an image located in a give path on your drive.
 # DO NOT REMOVE ANY COLOURS. DO NOT MODIFY PATHS. DO NOT FLATTEN IMAGES.
 #
@@ -33,7 +32,6 @@ def readAndResize(image_path: str, width=60, height=30) -> numpy.typing.NDArray:
         image = numpy.asarray([])
     return image
 
-
 # Straightforward function to read the data contained in the file "filename"
 def readCSVFile(filename: str) -> numpy.typing.NDArray:
     lines = []
@@ -51,13 +49,11 @@ def readCSVFile(filename: str) -> numpy.typing.NDArray:
         print("Please provide a proper path to file, the input is missing.")
     return numpy.array(lines)
 
-
 # Straightforward function to write the data contained in "lines" to a file "filename"
 def writeCSVFile(filename: str, lines: numpy.typing.NDArray):
     with open(filename, 'w', newline='') as outfile:
         writer = csv.writer(outfile)
         writer.writerows(lines)
-
 
 # Straightforward function to transform string to boolean value
 def strtobool(value: str) -> bool:
@@ -65,7 +61,6 @@ def strtobool(value: str) -> bool:
     if value in ("y", "yes", "on", "1", "true", "t"):
         return True
     return False
-
 
 # This function simply parses the arguments passed to main. It looks for the following:
 #       -k              : the value of k neighbours
@@ -83,7 +78,7 @@ def strtobool(value: str) -> bool:
 #       classified      : csv file extending training data format with 'PredictedClass' column
 #       mcc, gnc, rrf, vf,cf,sf,al
 #                       : staff variables, do not use
-#
+
 def parseArguments() -> dict:
     parser = argparse.ArgumentParser(description='Processes files ')
     parser.add_argument('-k', type=int)

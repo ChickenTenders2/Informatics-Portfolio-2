@@ -15,7 +15,6 @@ numpy.seterr(invalid='raise')
 classified_data = numpy.asarray(Helper.readCSVFile("../Extras/classified_data.csv"))
 expected_matrix = numpy.array([[2, 2, 0, 1, 1], [1, 2, 0, 0, 0], [0, 1, 1, 0, 1], [1, 2, 1, 3, 0], [0, 1, 0, 0, 1]])
 
-
 class Task_2_Testing(unittest.TestCase):
 
     # This function contains one unit test for confusionMatrix.
@@ -192,12 +191,10 @@ class Task_2_Testing(unittest.TestCase):
             student_result)
         self.assertEqual(result, True, result_message)
 
-
 def arrayEqual(data1, data2):
     nums1 = numpy.array(data1).flatten()
     nums2 = numpy.array(data2).flatten()
     return roundEqual(nums1, nums2)
-
 
 def roundEqual(nums1, nums2):
     if len(nums1) != len(nums2):
@@ -208,7 +205,6 @@ def roundEqual(nums1, nums2):
         if v1 != v2:
             return False
     return True
-
 
 if __name__ == "__main__":
     test_classes_to_run = [Task_2_Testing]

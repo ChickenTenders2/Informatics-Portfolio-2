@@ -8,7 +8,6 @@ from typing import Callable
 
 classification_scheme = ['Female', 'Male', 'Primate', 'Rodent', 'Food']
 
-
 def dummyKNN(training_data, data_to_classify, k, measure_func, similarity_flag, most_common_class_func,
              get_neighbour_classes_func, read_func, validate_format_func):
     classified_data = [['Path', 'ActualClass', 'PredictedClass']]
@@ -17,7 +16,6 @@ def dummyKNN(training_data, data_to_classify, k, measure_func, similarity_flag, 
         classified_data.append(data_to_classify[i] + ['Food'])
     print("Running dummyKNN")
     return classified_data
-
 
 def dummyEvaluateKNN(classified_data, confusion_func):
     precision = float(2)

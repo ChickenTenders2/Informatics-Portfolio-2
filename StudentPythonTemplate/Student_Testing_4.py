@@ -13,13 +13,11 @@ height = 30
 numpy.seterr(divide='raise')
 numpy.seterr(invalid='raise')
 
-#
 img_red = Helper.readAndResize("../Extras/red.jpg")
 img_black = Helper.readAndResize("../Extras/black.jpg")
 img_gray = Helper.readAndResize("../Extras/gray.jpg")
 
 places = 10
-
 
 class Task_4_Testing(unittest.TestCase):
 
@@ -54,7 +52,6 @@ class Task_4_Testing(unittest.TestCase):
         result = (val1 == val2)
         result_message = "Computing cosine similarity failed, expected " + str(val2) + " and got " + str(val1)
         self.assertEqual(result, True, result_message)
-
 
 if __name__ == "__main__":
     test_classes_to_run = [Task_4_Testing]
